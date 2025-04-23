@@ -93,6 +93,12 @@ network:
         addresses: [192.168.1.2, 192.168.1.3]
 ```
 
+- Changer les autorisations
+
+```sh
+sudo chmod 600 /etc/netplan/01-netcfg.yaml
+```
+
 - Appliquez la configuration
 
 ```sh
@@ -270,6 +276,10 @@ sudo ufw allow 53
 sudo ufw reload
 ```
 
+```sh
+sudo nano /etc/netplan/01-netcfg.yaml
+```
+
 - Configuration IP statique
 
 ```sh
@@ -285,6 +295,11 @@ network:
           via: 192.168.1.1
       nameservers:
         addresses: [192.168.1.2, 192.168.1.3]
+```
+- Changer les autorisations
+
+```sh
+sudo chmod 600 /etc/netplan/01-netcfg.yaml
 ```
 
 ```sh
